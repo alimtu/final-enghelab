@@ -296,7 +296,7 @@ const menuItems = [
   { id: 6, name: 'ثبت نام', path: '/Register' },
   { id: 7, name: 'پرتال خبری', path: '/newsPortal' },
   { id: 8, name: 'گالری تصاویر', path: '/gallery' },
-  { id: 9, name: 'آموزش ها', path: 'departments/education' },
+  { id: 9, name: 'مقالات', path: '/chive' }, 
   { id: 10, name: 'تماس با دانشگاه', path: '/contact', isMobile: false },
 ];
 

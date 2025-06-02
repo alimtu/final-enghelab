@@ -47,7 +47,7 @@ export default function HalfSliderComponent({ data }) {
             </div>
 
             {slide.title && (
-              <div className="absolute bottom-14 text-white z-20 font-bold text-xl lg:text-2xl w-full justify-center flex">
+              <div className="absolute bottom-14 text-black z-20 font-bold text-xl lg:text-2xl w-full justify-center flex">
                 {slide.title}
               </div>
             )}

@@ -10,12 +10,12 @@ export default function ArchivePage() {
     slides: [
       {
         image: defaultImagePath,
-        title: 'گالری تصاویر و ویدیو ها',
+        title: 'مقالات',
         description: 'Slide 1 Description',
       },
       {
         image: defaultImagePath,
-        title: 'گالری تصاویر و ویدیو ها ۲',
+         ظtitle: 'عنوان صفحه ی مقالات',
         description: 'Slide 2 Description',
       },
     ],

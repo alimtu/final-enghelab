@@ -4,7 +4,7 @@ import { FaPlay } from 'react-icons/fa';
 import Image from 'next/image';
 import { defaultImagePath } from '../../../constants';
 import { useState } from 'react';
-import { PlayCircleIcon } from 'lucide-react';
+import { PlayCircleIcon , CircleX} from 'lucide-react';
 
 export default function WhyCuIrComponent({ data }) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -22,8 +22,8 @@ export default function WhyCuIrComponent({ data }) {
         <h1 className="text-xl lg:text-3xl font-bold text-gray-900 ">{data.title}</h1>
         <p className="text-gray-500 text-sm leading-7 lg:text-base">{data.description}</p>
       </div>
-      <div className="flex flex-col max-lg:flex-col-reverse lg:flex-row gap-6 items-center lg:max-h-[584px] lg:h-[584px]">
-        <div className="w-full lg:w-5/12 flex flex-col justify-between h-full gap-6 lg:gap-2">
+      <div className="flex flex-col max-lg:flex-col-reverse lg:flex-row gap-6 items-center">
+        <div className="w-full lg:w-5/12 flex flex-col h-full gap-6 lg:gap-4">
           {data.items.map(card => (
             <div
               key={card.id}
@@ -65,7 +65,7 @@ export default function WhyCuIrComponent({ data }) {
                 <PlayCircleIcon className="lg:w-24 lg:h-24 w-16 h-16 text-white" strokeWidth={1} />
               </div>
             </div>
-
+ 
             {isVideoOpen && (
               <div className="fixed inset-0 bg-transparent backdrop-blur-xs grid place-items-center z-50">
                 <div className="relative w-full max-w-4xl bg-transparent">
@@ -82,7 +82,7 @@ export default function WhyCuIrComponent({ data }) {
                     preload="auto"
                     allowFullScreen
                   >
-                    <source src={DefaultData.video} loading="lazy" type="video/mp4" />
+                    <source src="/videos/university-video.mp4" type="video/mp4" />
                     مرورگر شما پخش ویدیو را پشتیبانی نمی‌کند!
                   </video>
                 </div>

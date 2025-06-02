@@ -53,7 +53,7 @@ export default function FullScreenSliderComponent({ data }) {
             />
 
             {slide.title && (
-              <div className="absolute bottom-30 text-white z-20 font-bold text-2xl w-full text-center justify-center items-center flex">
+              <div className="absolute bottom-30 text-black z-20 font-bold text-2xl w-full text-center justify-center items-center flex">
                 {slide.title}
               </div>
             )}
